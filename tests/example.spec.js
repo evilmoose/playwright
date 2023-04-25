@@ -17,3 +17,23 @@ test("Clicking on Elements", async ({ page }) => {
     await expect(errorMessage).toContainText('Invalid email address.');
 
 })
+
+// Working with Selectors
+/*test("Selectors", async ({ page }) => {
+    // test
+    await page.click('text=something');
+
+    // css selectors
+    await page.click('button');
+    await page.click('#id');
+    await page.click('.class');
+
+    // Only visible Css Selector
+    await page.click('.submit-button:visible');
+
+    // Combinations
+    await page.click('#username .first');
+
+    // XPath
+    await page.click('//button');
+})*/
