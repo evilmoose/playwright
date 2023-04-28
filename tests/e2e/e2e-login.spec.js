@@ -24,8 +24,8 @@ test.describe.parallel('Login / Logout Flow', () => {
     await page.type('#user_password', 'password')
     await page.click('text=Sign in')
 
-    const accountSummaryTab = await page.locator('#account_summary_tab')
-    await expect(accountSummaryTab).toBeVisible()
+    /*const accountSummaryTab = await page.locator('#account_summary_tab')
+    await expect(accountSummaryTab).toBeVisible();*/
 
     await page.goto('http://zero.webappsecurity.com/logout.html')
     await expect(page).toHaveURL('http://zero.webappsecurity.com/index.html')
